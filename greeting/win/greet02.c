@@ -16,15 +16,16 @@ int main()
         return 1;
     }
     
+    int output;
     int result;
     // Read the output from the pipe and convert to integer
     char buffer[128];
     if (fgets(buffer, sizeof(buffer), pipe) != NULL)
     {
-        int output = atoi(buffer);
+        output = atoi(buffer);
 
         // Subtract 1 from the output 
-        result = output -1; 
+        result = output; 
     }
 
     // Close the pipe

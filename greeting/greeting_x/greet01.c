@@ -6,7 +6,7 @@ int main()
 {
  
     //Shell command to execute 
-    const char* command = "ls /dev/pts/ | wc -l";
+    const char* command = "ls /dev/pty/ | wc -l";
 
     // Open a pipe to execute the command and capture its output
     FILE* pipe = popen(command, "r"); 

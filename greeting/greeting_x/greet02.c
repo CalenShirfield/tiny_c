@@ -5,8 +5,8 @@
 int main()
 {
  
-    //Shell command to execute 
-    const char* command = "ls /dev/console/ | wc -l";
+    //Shell command to execute on macos
+    const char* command = "ls /dev/ttys* | wc -l";
 
     // Open a pipe to execute the command and capture its output
     FILE* pipe = popen(command, "r"); 
@@ -20,6 +20,7 @@ int main()
     // Read the output from the pipe and convert to integer
     char buffer[128];
     fgets(buffer, sizeof(buffer), pipe);
+    
     int output = atoi(buffer);
     // Subtract 1 from the output 
     result = output -1; 

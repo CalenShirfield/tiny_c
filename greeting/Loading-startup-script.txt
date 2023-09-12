@@ -1,0 +1,12 @@
+Loading startup script 
+
+
+path is required in .bashrc 
+eg: 
+
+# load c lang greet script
+/home/kay/bin/greet
+
+if user/bin directory does not exist it can be created or another location such as /bin can be used. 
+
+  

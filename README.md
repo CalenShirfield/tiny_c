@@ -1,2 +1,3 @@
 # tiny_c
-small_c_projects for linux 
+Cute c projects for linux. 
+Inspired by Tiny C Projects by Daniel Gookin.
